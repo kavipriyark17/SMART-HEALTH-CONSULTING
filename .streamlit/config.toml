@@ -1,0 +1,6 @@
+[server]
+# Avoids a blank page when a large "venv" folder sits inside the project folder.
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false

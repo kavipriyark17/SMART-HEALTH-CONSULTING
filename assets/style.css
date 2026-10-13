@@ -1,0 +1,75 @@
+/* Healthcare theme: blue, white and light green */
+:root {
+    --blue: #1e6fd9;
+    --blue-dark: #134a96;
+    --green-light: #e8f7ee;
+    --green: #3bb273;
+    --bg: #f5f9ff;
+    --text: #1f2d3d;
+}
+
+.stApp { background-color: var(--bg); }
+
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #ffffff 0%, var(--green-light) 100%);
+    border-right: 1px solid #d6e4f5;
+}
+
+h1, h2, h3 { color: var(--blue-dark); }
+
+.hero {
+    background: linear-gradient(120deg, var(--blue) 0%, #4aa3e8 70%, var(--green) 140%);
+    color: #ffffff;
+    padding: 2.2rem 2rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+.hero h1 { color: #ffffff; margin: 0 0 .5rem 0; font-size: 2.1rem; }
+.hero p { margin: 0; font-size: 1.05rem; opacity: .95; }
+
+.card {
+    background: #ffffff;
+    border: 1px solid #dbe7f6;
+    border-top: 4px solid var(--green);
+    border-radius: 12px;
+    padding: 1.2rem 1.1rem;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(30, 111, 217, 0.07);
+}
+.card h4 { color: var(--blue-dark); margin: 0 0 .4rem 0; }
+.card p { color: var(--text); margin: 0; font-size: .95rem; }
+
+.disclaimer {
+    background: #fff8e6;
+    border-left: 5px solid #f0b429;
+    padding: .8rem 1rem;
+    border-radius: 8px;
+    color: #5c4400;
+    font-size: .92rem;
+    margin: 1rem 0;
+}
+
+.response-box {
+    background: #ffffff;
+    border: 1px solid #cfe3f7;
+    border-left: 5px solid var(--blue);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+}
+
+div.stButton > button, div[data-testid="stFormSubmitButton"] > button {
+    background-color: var(--blue);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: .5rem 1.2rem;
+}
+div.stButton > button:hover, div[data-testid="stFormSubmitButton"] > button:hover {
+    background-color: var(--blue-dark);
+    color: #ffffff;
+}
+
+@media (max-width: 640px) {
+    .hero { padding: 1.4rem 1.1rem; }
+    .hero h1 { font-size: 1.5rem; }
+}
